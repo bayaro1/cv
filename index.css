@@ -62,10 +62,11 @@ body, input {
     height: 100%;
     width: 400px;
     box-shadow: 0 0 4px var(--color-grey);
-    border-radius: 8px;
+    border-radius: 6px;
     border: none;
-    padding: 0 40px;
+    padding: 0 34px;
     font-size: 1em;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
 }
 
 .header-search .i-search {
@@ -85,11 +86,11 @@ body, input {
 }
 .cursor {
     position: absolute;
-    top: 11px;
-    right: 50px;
+    top: 9px;
+    right: 57px;
     width: 1px;
-    height: 1.2em;
-    background-color: #76797c;
+    height: 1.3em;
+    background-color: var(--color-black);
 }
 
 
@@ -204,4 +205,112 @@ body, input {
     padding: 5px 10px;
     box-shadow: 0 0 1px var(--color-black);
     border-radius: 1000px;
+}
+
+.chrono-list {
+    padding-left: 24px;
+    border-left: solid 1px var(--color-grey);
+}
+.chrono-list-item {
+    position: relative;
+    padding: 15px 0;
+    border-top: solid 3px var(--color-grey);
+}
+.chrono-list-item:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+.chrono-list-item:last-child {
+    padding-bottom: 0;
+}
+.chrono-list-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: calc(50% - 6px);
+    left: -30px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 1000px;
+}
+.chrono-list-img {
+    height: auto;
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 1px var(--color-black);
+}
+
+.chrono-date {
+    font-style: italic;
+    font-size: .8em;
+    margin: 5px 0;
+}
+.chrono-list-img-wrapper {
+    width: 50%;
+    flex: none;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.chrono-text-wrapper {
+    flex: 1 0;
+}
+
+.chrono-text {
+    font-size: .9em;
+    line-height: 1.4;
+}
+
+.chrono-text-list {
+    margin: 10px 0;
+}
+.chrono-text-list-item {
+    margin: 5px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    font-size: .9em;
+}
+.chrono-text-list-item::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-primary);
+    flex: none;
+    border-radius: 1000px;
+    position: relative;
+    top: 6px;
+}
+.chrono-list-item-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.chrono-list-item-title .chrono-date {
+    font-weight: 400;
+}
+
+.reference {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.chrono-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-verylightgrey);
+    padding: 5px 10px;
+    border-left: solid 4px var(--color-primary);
+    font-size: .8em;
+}
+.chrono-info .icon {
+    flex: none;
+    position: relative;
+    left: -5px;
+    width: 1.4em;
+    height: 1.4em;
+    color: var(--color-primary);
 }
