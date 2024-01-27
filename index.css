@@ -15,6 +15,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -44,6 +49,16 @@ body, input {
     align-items: center;
     box-shadow: 0 0 2px var(--color-grey);
     font-size: .85em;
+}
+.footer-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+.social-img {
+    width: 17px;
+    height: auto;
 }
 .header {
     height: 80px;
@@ -183,9 +198,22 @@ body, input {
 }
 .sidebar {
     flex: none;
-    width: 260px;
-    background-color: rgb(245, 245, 245);
+    width: 240px;
     height: 100%;
+    padding: 115px 15px 20px;
+    margin-right: 20px;
+}
+.side-block-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.side-block {
+    margin: 30px 0;
+}
+.side-block.box {
+    background-color: var(--color-verylightgrey);
+    padding: 10px;
 }
 .central {
     flex: 1 0;
@@ -199,6 +227,14 @@ body, input {
     flex-wrap: wrap;
     row-gap: 10px;
     column-gap: 7px;
+}
+.central-list.small .central-list-item {
+    font-size: .75em;
+    padding: 3px 7px;
+}
+.central-list.small {
+    row-gap: 5px;
+    column-gap: 5px;
 }
 .central-list-item {
     font-size: .9em;
@@ -215,6 +251,20 @@ body, input {
     position: relative;
     padding: 15px 0;
     border-top: solid 3px var(--color-grey);
+}
+.side-block .chrono-list {
+    font-size: .8em;
+    padding-left: 15px;
+}
+.side-block .chrono-list-item {
+    border: none;
+    padding: 8px;
+}
+.side-block .chrono-list-item::before {
+    width: 9px;
+    height: 9px;
+    left: -20px;
+    background-color: var(--color-primary);
 }
 .chrono-list-item:first-child {
     padding-top: 0;
@@ -266,11 +316,11 @@ body, input {
     margin: 10px 0;
 }
 .chrono-text-list-item {
+    font-size: .8em;
     margin: 5px 0;
     display: flex;
     align-items: flex-start;
     gap: 7px;
-    font-size: .9em;
 }
 .chrono-text-list-item::before {
     content: '';
@@ -290,6 +340,7 @@ body, input {
 .chrono-list-item-title .chrono-date {
     font-weight: 400;
 }
+
 
 .reference {
     font-style: italic;
@@ -312,5 +363,28 @@ body, input {
     left: -5px;
     width: 1.4em;
     height: 1.4em;
+    color: var(--color-primary);
+}
+
+
+.ref-name, .ref-job, .ref-num {
+    font-size: .9em;
+}
+.ref-name {
+    font-weight: 500;
+}
+.ref-job {
+    font-weight: 400;
+    font-style: italic;
+    font-size: .8em;
+}
+.ref-num {
+    margin-top: 5px;
+    letter-spacing: .06em;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.ref-num .i-phone {
     color: var(--color-primary);
 }
