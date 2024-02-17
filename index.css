@@ -78,7 +78,6 @@ body, input {
 .header-search-input {
     height: 100%;
     width: 400px;
-    box-shadow: 0 0 4px var(--color-grey);
     border-radius: 6px;
     border: none;
     padding: 0 34px;
@@ -117,7 +116,7 @@ body, input {
 .header-profile-modal {
     position: absolute;
     background-color: #FFF;
-    box-shadow: 0 0 2px var(--color-black);
+    border: solid 1px rgb(185, 185, 185);
     top: calc(100% + 30px);
     padding: 3px 10px;
     border-radius: 6px;
@@ -388,5 +387,45 @@ body, input {
     align-items: center;
 }
 .ref-num .i-phone {
+    color: var(--color-primary);
+}
+
+
+.top-box-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 18px 0;
+}
+.top-box {
+    width: calc(50% - 10px);
+    flex: none;
+    padding: 10px 20px;    
+    border: solid 1px rgb(185, 185, 185);
+    border-radius: 8px;
+}
+.top-box .box-text {
+    font-weight: 500;
+}
+.top-box .box-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.i-text {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.i-text img {
+    width: 25px;
+    height: 25px;
+    flex: none;
+}
+
+.i-world {
+    width: 22px;
+    height: 22px;
     color: var(--color-primary);
 }
